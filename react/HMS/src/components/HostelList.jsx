@@ -10,7 +10,11 @@ const HostelList = () => {
       name: "RM 309",
       hostelname: "DOUGLAS VILLA",
       slot: "3 slots available",
-      image: "../../../public/hostels/1.jpg",
+      images: [
+        "../../../public/hostels/1.jpg",
+        "../../../public/hostels/11.jpg",
+        "../../../public/hostels/66.jpg",
+      ],
       price: "UGX 200000",
       rating: 2,
       roomtype: "Single Room",
@@ -20,7 +24,11 @@ const HostelList = () => {
       name: "RM 309",
       hostelname: "DOUGLAS VILLA",
       slot: 3,
-      image: "../../../public/hostels/2.jpg",
+      images: [
+        "../../../public/hostels/22.jpg",
+        "../../../public/hostels/6.jpg",
+        "../../../public/hostels/33.jpg",
+      ],
       price: 200000,
       rating: 4.2,
       roomtype: 1,
@@ -30,23 +38,19 @@ const HostelList = () => {
       name: "RM 309",
       hostelname: "DOUGLAS VILLA",
       slot: 4,
-      image: "../../../public/hostels/3.jpg",
+      images: [
+        "../../../public/hostels/9.jpg",
+        "../../../public/hostels/1.jpg",
+        "../../../public/hostels/7.jpg",
+      ],
       price: 200000,
       rating: 4.7,
       roomtype: 1,
     },
-    {
-      id: 1,
-      name: "RM 309",
-      hostelname: "DOUGLAS VILLA",
-      slot: "3 slots available",
-      image: "../../../public/hostels/1.jpg",
-      price: "UGX 200000",
-      rating: 1,
-      roomtype: "Single Room",
-    },
+
     // Add more hostel objects as needed
   ];
+
   return (
     <div>
       <div className="hostel-list">
@@ -54,50 +58,29 @@ const HostelList = () => {
           <div class="card my-4" key={room.id}>
             <div id="carouselExampleIndicators" class="carousel slide">
               <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
+                {room.images.map((_, index) => (
+                  <button
+                    type="button"
+                    data-bs-target={`#carouselExample${room.id}`}
+                    data-bs-slide-to={index}
+                    className={index === 0 ? "active" : ""}
+                    aria-label={`Slide ${index + 1}`}
+                  ></button>
+                ))}
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img
-                    src={"../../../public/hostels/1.jpg"}
-                    class="d-block w-100 card-img-top"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src={"../../../public/hostels/2.jpg"}
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src={"../../../public/hostels/3.jpg"}
-                    class="d-block w-100"
-                    alt="..."
-                  />
+                  {room.images.map((image, index) => (
+                    <div
+                      class={`carousel-item${index === 0 ? " active" : ""}`}
+                      key={index}
+                    >
+                      <img src={image} class="d-block w-100" alt="..." />
+                    </div>
+                  ))}
                 </div>
               </div>
+
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -123,8 +106,6 @@ const HostelList = () => {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-
-            {/* <img src={room.image} class="card-img-top" alt={room.name} /> */}
             <div class="card-body">
               <small class="card-title">{room.name}</small>
               <br />
@@ -137,7 +118,6 @@ const HostelList = () => {
               <small class="card-text">{room.roomtype}</small>
               <br />
               <div className="stars d-flex align-items-center justify-content-between my-2 text-secondary">
-                {" "}
                 {[...Array(5)].map((_, index) => (
                   <FaStar
                     key={index}
