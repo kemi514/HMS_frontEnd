@@ -11,12 +11,12 @@ const HostelList = () => {
       hostelname: "DOUGLAS VILLA",
       slot: "3 slots available",
       images: [
-        "../../../public/hostels/1.jpg",
-        "../../../public/hostels/11.jpg",
-        "../../../public/hostels/66.jpg",
+        "../../../public/hostels/s10.jpg",
+        "../../../public/hostels/sr1.jpg",
+        "../../../public/hostels/b5.jpg",
       ],
-      price: "UGX 200000",
-      rating: 2,
+      price: "UGX 8,000,000",
+      rating: 5,
       roomtype: "Single Room",
     },
     {
@@ -25,13 +25,13 @@ const HostelList = () => {
       hostelname: "DOUGLAS VILLA",
       slot: 3,
       images: [
-        "../../../public/hostels/22.jpg",
-        "../../../public/hostels/6.jpg",
-        "../../../public/hostels/33.jpg",
+        "../../../public/hostels/s9.jpg",
+        "../../../public/hostels/sr2.jpg",
+        "../../../public/hostels/b3.jpg",
       ],
-      price: 200000,
+      price: "UGX 4,000,000",
       rating: 4.2,
-      roomtype: 1,
+      roomtype: "Single Room",
     },
     {
       id: 3,
@@ -39,15 +39,168 @@ const HostelList = () => {
       hostelname: "DOUGLAS VILLA",
       slot: 4,
       images: [
-        "../../../public/hostels/9.jpg",
-        "../../../public/hostels/1.jpg",
-        "../../../public/hostels/7.jpg",
+        "../../../public/hostels/s2.jpg",
+        "../../../public/hostels/sr5.jpg",
+        "../../../public/hostels/b2.jpg",
       ],
-      price: 200000,
+      price: "UGX 3,000,000",
       rating: 4.7,
-      roomtype: 1,
+      roomtype: "Single Room",
     },
-
+    {
+      id: 4,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/s7.jpg",
+        "../../../public/hostels/sr4.jpg",
+        "../../../public/hostels/b6.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "Single Room",
+    },
+    {
+      id: 5,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/s1.jpg",
+        "../../../public/hostels/sr3.jpg",
+        "../../../public/hostels/b1.jpg",
+      ],
+      price: "UGX 2,000,000",
+      rating: 3.7,
+      roomtype: "Single Room",
+    },
+    {
+      id: 6,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/s3.jpg",
+        "../../../public/hostels/sr7.jpg",
+        "../../../public/hostels/b4.jpg",
+      ],
+      price: "UGX 1,000,000",
+      rating: 1.7,
+      roomtype: "Single Room",
+    },
+    {
+      id: 7,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/s8.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "Single Room",
+    },
+    {
+      id: 8,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d2.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 9,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d3.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 10,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d4.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 11,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d5.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 12,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d6.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 13,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d7.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
+    {
+      id: 14,
+      name: "RM 309",
+      hostelname: "DOUGLAS VILLA",
+      slot: 4,
+      images: [
+        "../../../public/hostels/d8.jpg",
+        "../../../public/hostels/sr6.jpg",
+        "../../../public/hostels/b7.jpg",
+      ],
+      price: "UGX 3,000,000",
+      rating: 4.7,
+      roomtype: "double Room",
+    },
     // Add more hostel objects as needed
   ];
 
@@ -56,54 +209,44 @@ const HostelList = () => {
       <div className="hostel-list">
         {Rooms.map((room) => (
           <div class="card my-4" key={room.id}>
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                {room.images.map((_, index) => (
-                  <button
-                    type="button"
-                    data-bs-target={`#carouselExample${room.id}`}
-                    data-bs-slide-to={index}
-                    className={index === 0 ? "active" : ""}
-                    aria-label={`Slide ${index + 1}`}
-                  ></button>
+            <div id={`carouselExample-${room.id}`} className="carousel slide">
+              <div className="carousel-inner">
+                {room.images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  >
+                    <img
+                      src={image}
+                      className="d-block w-100"
+                      alt={`Room ${room.id} Image ${index + 1}`}
+                    />
+                  </div>
                 ))}
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  {room.images.map((image, index) => (
-                    <div
-                      class={`carousel-item${index === 0 ? " active" : ""}`}
-                      key={index}
-                    >
-                      <img src={image} class="d-block w-100" alt="..." />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
-                data-bs-target="#carouselExampleIndicators"
+                data-bs-target={`#carouselExample-${room.id}`}
                 data-bs-slide="prev"
               >
                 <span
-                  class="carousel-control-prev-icon"
+                  className="carousel-control-prev-icon"
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExampleIndicators"
+                data-bs-target={`#carouselExample-${room.id}`}
                 data-bs-slide="next"
               >
                 <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
+                  className="carousel-control-next-icon"
+                  ariahidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
             <div class="card-body">
