@@ -8,8 +8,8 @@ const App = () => {
     <>
 
      {/* <Login/>  */}
-     {/* <Home/>  */}
-     <Hostels /> 
+     <Home/> 
+     {/* <Hostels />  */}
     </>
   )
 }

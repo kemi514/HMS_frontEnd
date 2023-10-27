@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="admin-dashboard mb-5">
         <div className="header p-2 px-5 d-flex align-items-center">
-          Hostel Management System
+          <small>Hostel Management System</small>
           <div className="search-bar px-3">
             <input type="text" placeholder="Search for hostels..." />
             {/* <button> */}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaStar, FaSearchLocation } from "react-icons/fa";
+import Hostel from "./Hostel";
 
 const AllHostels = () => {
   const [loading, setLoading] = useState(true); // Set initial loading state to true
@@ -89,34 +89,8 @@ const AllHostels = () => {
       ) : ( 
       <div className="row">
         {Hostels.map((hostel) => (
-          <div className=" col-12 col-md-2 col-lg-4" key={hostel.id}>
-            <div className="card my-4">
-              <img
-                src={hostel.images}
-                className="card-img-top"
-                alt={hostel.hostelname}
-              />
-              <div className="card-body">
-                <h5 className="card-title">{hostel.hostelname}</h5>
-                <p className="card-text">
-                  {hostel.direction} <FaSearchLocation />
-                </p>
-                <div className="stars d-flex align-items-center justify-content-between my-2 text-secondary">
-                  {[...Array(5)].map((_, index) => (
-                    <FaStar
-                      key={index}
-                      className={
-                        index < Math.round(hostel.rating) ? "text-warning" : ""
-                      }
-                    />
-                  ))}
-                </div>
-                <a href="#" className="btn btn-primary">
-                  View more
-                </a>
-              </div>
-            </div>
-          </div>
+        
+            <Hostel hostel={hostel} key={hostel.id}/>
         ))}
       </div>
          )}

@@ -42,6 +42,8 @@ input[type=email], input[type = password]{
 }
 input::placeholder{
   opacity: .5;
+  color: aliceblue;
+  font-size: .9rem;
 }
 .signup{
   color: var(--pink);
@@ -106,28 +108,10 @@ body{
   margin-bottom: 35px; /* Adjust this value to control the gap size */
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Two equal columns */
-  grid-gap: 20px; /* Spacing between grid items */
-  width: 100%; /* Set a max width for the grid container */
-  margin: 0 auto; /* Center the grid horizontally */
-}
-
-.item {
-  padding: 20px;
-  border-radius: 4px;
-  width: 100%;
-  height: 198vh;
-}
 
 .comment-p{
 text-align: center;
-font-family: Arial;
 }
- .comment-date{
-  font-family: Arial;
- }
 .card{
   border: none;
   box-shadow: 3px 6px 20px rgba(190, 190, 190, 0.1),-3px -6px 20px rgba(157, 157, 157, 0.1);
@@ -167,4 +151,40 @@ font-family: Arial;
     opacity: 0;
   }
 }
+/* .hostel{
+  width: 25vw;
+} */
+.comment-i{
+  width: 55px;
+}
+.image{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.ribbon{
+  border-radius: 100%;
+  border: 1px solid var(--pink);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments{
+  overflow-y: scroll;
+  height: 80vh;
 
+}
+.comments::-webkit-scrollbar{
+  width: 5px;
+}
+.comments::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.501);
+  opacity: .3;
+  border-radius: 100px;
+}

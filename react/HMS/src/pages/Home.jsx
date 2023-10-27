@@ -1,41 +1,21 @@
 import React from "react";
-import {
-  FaHome,
-  FaUser,
-  FaCalendar,
-  FaSignOutAlt,
-  FaSearch,
-} from "react-icons/fa";
+
 import Comments from "../components/Comments";
 import HostelList from "../components/HostelList";
 import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="wrapper">
-        <div className="item">
-          <div className="sidebar fix">
-            <ul>
-              <li>
-                <FaHome /> Home
-              </li>
-              <li>
-                <FaUser /> My Profile
-              </li>
-              <li>
-                <FaCalendar /> My Reservation
-              </li>
-              <li>
-                <FaSignOutAlt /> Sign Out
-              </li>
-            </ul>
-          </div>
+      <div className="row my-5 py-3">
+        <div className="col">
+          <Sidebar/>
         </div>
-        <div className="item">
+        <div className="col">
           <HostelList />
         </div>
-        <div className="item">
+        <div className="col">
           <Comments /> {/* Incluing the comments component */}
         </div>
         <div className="comments"></div>
