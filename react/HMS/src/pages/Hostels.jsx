@@ -6,12 +6,24 @@ import AdvancedSearch from "../components/AdvancedSearch";
 import { FaArrowAltCircleUp, FaRegHandPointUp } from "react-icons/fa";
 import { useState, useContext } from "react";
 import DataContext from "../utilities/DataContext";
+import AuthContext from "../utilities/AuthContext";
 import Search from "../components/Search";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const Hostels = () => {
+  let navigate = useNavigate()
   const {blurred} = useContext(DataContext)
+  let {isAuthenticated} = useContext(AuthContext)
+useEffect(()=>{
+  if(!isAuthenticated){
+    navigate("/login")
+  }
+}, [])
   return (
+
     <>
     <div className={`blurred ${blurred?'blurred-show': ''}`}>
+      
     <Search />
     
     </div>

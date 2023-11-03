@@ -4,15 +4,21 @@ import Home from './pages/Home'
 import Hostels from './pages/Hostels'
 import { DataProvider } from './utilities/DataContext'
 import { AuthProvider } from './utilities/AuthContext'
+import { Routes, Route } from 'react-router-dom'
+import Signup from './pages/Signup'
 const App = () => {
   return (
     <>
+
     <DataProvider>
       <AuthProvider>
-     {/* <Login/>  */}
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/signup' element={<Signup/>}/>
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/hostels' element={<Hostels/>}/>
+        </Routes>
       </AuthProvider>
-     {/* <Home/>  */}
-      <Hostels />  
     </DataProvider>
     </>
   )
