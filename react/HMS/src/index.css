@@ -16,6 +16,13 @@
   background-size: cover;
 
 }
+.in-p{
+margin-left: 10px;
+}
+.txt{
+  color: black;
+}
+
 .login .container{
   height: 90vh;
   overflow-y: scroll;
@@ -159,6 +166,73 @@ text-align: center;
 .comment-i{
   width: 55px;
 }
+button:hover{
+  background-color: #5A7580;
+}
+.con-info{
+  font-family: poppins;
+  color: #5A7580;
+  box-shadow: 3px 6px 20px rgba(190, 190, 190, 0.1),-3px -6px 20px rgba(157, 157, 157, 0.1);
+  margin-top: 10px;
+}
+.all-info{
+  padding: 15px;
+  word-spacing: 10px;
+}
+.info-2{
+  padding: 15px;
+}
+.info-1:hover{
+  color: var(--pink);
+}
+.p-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.p-image img {
+  width: 100%; /* Make sure the image takes up the entire space of its parent */
+  height: 100%; /* Make sure the image takes up the entire space of its parent */
+  object-fit: cover; /* This is optional but useful for maintaining aspect ratio */
+}
+.all-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  flex-direction: column;
+  box-shadow: 3px 6px 20px rgba(190, 190, 190, 0.1),-3px -6px 20px rgba(157, 157, 157, 0.1);
+}
+.p-ribbon{
+  border-radius: 100%;
+  border: 1px solid var(--pink);
+  width: 156px;
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-prof{
+text-align: center;
+margin: 35px;
+font-family: poppins;
+padding: 20px;
+line-height: 32px;
+}
+.prof1{
+  color: var(--pink);
+} 
+.prof2{
+  color: black;
+ } 
+.prof3{
+color: #5A7580;
+} 
 .image{
   width: 35px;
   height: 35px;
@@ -206,7 +280,7 @@ text-align: center;
   box-shadow: 3px 6px 20px rgba(190, 190, 190, 0.1),-3px -6px 20px rgba(157, 157, 157, 0.1);
 }
 .advancedSearch{
-  height: 70vh;
+  height: 75vh;
   transform: scale(1);
   flex-direction: column;
   justify-content: space-between;
@@ -270,3 +344,10 @@ text-align: center;
   color: aliceblue;
   padding: 5px 20px;
 }
+
+ /* reservations styles */
+ .r-prof{
+  font-family: poppins;
+  padding: 15px;
+  line-height: 32px;
+  }
